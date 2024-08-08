@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShareOut</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body id="login">
+    <div id="auth">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>        
+        <button id="login-btn">Login</button>
+        <div class="links">
+          <a>Don't have an account?</a>
+          <a href="/html/registration.html" class="register-link">Register here</a>
+        </div>
+      </div>      
+
+   <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-storage-compat.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/login.js"></script> <!-- Adjust script paths as necessary -->
+
+</body>
+</html>

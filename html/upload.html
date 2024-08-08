@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareOut-Upload and Share Files</title>
+        <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h2>Upload and Share Files</h2> 
+ 
+    <!-- File Upload Form -->
+     <div class="file-upload-container">
+        <form id="file-upload-form">
+            <input type="file" id="file-upload" accept=".jpg,.jpeg,.png" required>
+            <button type="submit" id="upload">Upload File</button>
+        </form>
+     </div>
+     <h2>Uploaded Files</h2>
+    <div id="file-list"> 
+        <!-- Display uploaded files here -->
+     </div>
+
+    <h3>Share File</h3>
+    <form id="share-file-form">
+        <select id="file-select" required> 
+            <!-- Populate with uploaded file options dynamically -->
+        </select>
+        <input type="email" id="recipient-shareOutId" placeholder="Recipient's ShareOutId" required>
+        <button type="submit" id="share">Share</button>
+    </form>
+    <h3>Share Your Uploaded File</h3> 
+    <!-- Sharing Options -->
+    <div id="sharing-options">
+        <button id="shareGmail">Share via Gmail</button>
+        <button id="shareWhatsApp">Share via WhatsApp</button>
+    </div>
+
+    <div class="logout-container">
+        <button class="logout-btn">Logout</button>
+    </div> 
+    <!-- Modal for image viewing -->
+    <div id="image-modal" class="modal">
+        <span id="close-modal">&times;</span>
+        <img id="modal-image" src="">
+    </div> 
+
+    <!-- Firebase SDKs and JavaScript files -->
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-storage-compat.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/upload.js"></script> 
+    </body>
+</html> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareOut Registration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body id="register-body">
+    <form id="register-form">
+        <h2>Register User</h2>
+        
+        <label for="displayName">Display Name:</label>
+        <input type="text" id="displayName" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        
+        <button type="button" id="register-btn">Register</button>
+        
+        <div class="links">
+            <a> Already have an account?</a>
+            <a href="/html/login.html" class="login-link">Login here</a>
+        </div>
+    </form>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore-compat.js"></script>
+
+    <!-- Local JavaScript Files -->
+    <script src="/js/config.js"></script>
+    <script src="/js/registration.js"></script>
+</body>
+</html>
